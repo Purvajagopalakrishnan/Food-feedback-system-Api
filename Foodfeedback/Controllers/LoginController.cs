@@ -6,19 +6,21 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Foodfeedback.DTO;
 using Foodfeedback.Models;
+using Foodfeedback.Services;
+using Foodfeedback.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Foodfeedback.Controllers
 {
     [Route("api/login")]
-    public class LoginController: Controller
+    public class LoginController
     {
+        private ILogin iLogin = new Loginservice();
         [HttpPost]
-        public bool GetUserdetails([FromBody] UserDTO user)
+        public bool GetUserdetails([FromBody]UserDTO user)
         {
-            var entities = new FoodfeedbackDBContext();
-            var result = entities.Users.Where(x => x.Email == user.Email && x.Password == user.Password).Any();
-            return result;
+           var result = iLogin.Userdetails(user);
+           return result;
         }
         public HttpResponseMessage Options()
         {

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foodfeedback", "Foodfeedback\Foodfeedback.csproj", "{2863A4E0-93D0-43E0-9258-FBE7291FEF71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foodfeedbacktests", "Logintest\Foodfeedbacktests.csproj", "{8CBA7A53-B78F-49AF-AAF3-461DE4F916D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2863A4E0-93D0-43E0-9258-FBE7291FEF71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2863A4E0-93D0-43E0-9258-FBE7291FEF71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2863A4E0-93D0-43E0-9258-FBE7291FEF71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CBA7A53-B78F-49AF-AAF3-461DE4F916D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CBA7A53-B78F-49AF-AAF3-461DE4F916D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CBA7A53-B78F-49AF-AAF3-461DE4F916D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CBA7A53-B78F-49AF-AAF3-461DE4F916D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
