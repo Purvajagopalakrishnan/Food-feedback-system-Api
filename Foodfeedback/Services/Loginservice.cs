@@ -2,18 +2,17 @@
 using Foodfeedback.Models;
 using Foodfeedback.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Linq;
 
 namespace Foodfeedback.Services
 {
-    public class Loginservice : ILogin
+    public class Loginservice : ILoginService
     {
-        bool ILogin.Userdetails([FromBody]UserDTO user)
+        bool ILoginService.Userdetails([FromBody]UserDTO userDTO)
         {
             var entities = new FoodfeedbackDBContext();
-            var result = entities.Users.Where(x => x.Email == user.Email && x.Password == user.Password).Any();
-            return result;
+            var loginresult = entities.Users.Where(x => x.Email == userDTO.Email && x.Password == userDTO.Password).Any();
+            return loginresult;
         }
     }
 }

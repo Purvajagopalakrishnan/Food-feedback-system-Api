@@ -1,0 +1,17 @@
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\bin\Debug\netcoreapp2.1\Foodfeedbacktests.deps.json
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\bin\Debug\netcoreapp2.1\Foodfeedbacktests.runtimeconfig.json
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\bin\Debug\netcoreapp2.1\Foodfeedbacktests.runtimeconfig.dev.json
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\bin\Debug\netcoreapp2.1\Foodfeedbacktests.dll
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\bin\Debug\netcoreapp2.1\Foodfeedback.dll
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\bin\Debug\netcoreapp2.1\Foodfeedback.pdb
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\obj\Debug\netcoreapp2.1\Foodfeedbacktests.csprojAssemblyReference.cache
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\obj\Debug\netcoreapp2.1\Foodfeedbacktests.csproj.CoreCompileInputs.cache
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\obj\Debug\netcoreapp2.1\Foodfeedbacktests.AssemblyInfoInputs.cache
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\obj\Debug\netcoreapp2.1\Foodfeedbacktests.AssemblyInfo.cs
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\obj\Debug\netcoreapp2.1\Foodfeedbacktests.csproj.CopyComplete
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\bin\Debug\netcoreapp2.1\Foodfeedbacktests.pdb
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\obj\Debug\netcoreapp2.1\Foodfeedbacktests.dll
+C:\Users\purvajag\source\repos\Foodfeedback\Logintest\obj\Debug\netcoreapp2.1\Foodfeedbacktests.pdb

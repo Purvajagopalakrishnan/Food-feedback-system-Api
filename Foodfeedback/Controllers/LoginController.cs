@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
-using Foodfeedback.DTO;
-using Foodfeedback.Models;
-using Foodfeedback.Services;
+﻿using Foodfeedback.DTO;
 using Foodfeedback.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,18 +7,16 @@ namespace Foodfeedback.Controllers
     [Route("api/login")]
     public class LoginController
     {
-        private ILogin iLogin = new Loginservice();
-        [HttpPost]
-        public bool GetUserdetails([FromBody]UserDTO user)
+        private readonly ILoginService _loginService;
+        public LoginController(ILoginService loginService)
         {
-           var result = iLogin.Userdetails(user);
-           return result;
+            _loginService = loginService;
         }
-        public HttpResponseMessage Options()
+        [HttpPost]
+        public bool GetUserdetails([FromBody]UserDTO userDTO)
         {
-            var response = new HttpResponseMessage();
-            response.StatusCode = HttpStatusCode.OK;
-            return response;
+           var result = _loginService.Userdetails(userDTO);
+           return result;
         }
     }
 }
