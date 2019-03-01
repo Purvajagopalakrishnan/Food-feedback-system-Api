@@ -13,9 +13,12 @@ namespace Foodfeedback.Controllers
             _loginService = loginService;
         }
         [HttpPost]
+        /// <summary>
+        /// call the service and check if the user exists
+        /// </summary>
         public bool GetUserdetails([FromBody]UserDTO userDTO)
         {
-           var result = _loginService.Userdetails(userDTO);
+           var result = _loginService.CheckIfUserExists(userDTO);
            return result;
         }
     }

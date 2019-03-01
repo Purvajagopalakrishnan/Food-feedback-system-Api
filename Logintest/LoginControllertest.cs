@@ -6,13 +6,13 @@ using Xunit;
 
 namespace Logintest
 {
-    public class Logintest
+    public class LoginControllertest
     {
         [Fact]
         public void ShouldAuthenticateValidUser()
         {
             var mockLoginervice = new Mock<ILoginService>();
-            mockLoginervice.Setup ( details => details.Userdetails(It.Is<UserDTO>(x=> x.Email == "john89@cesltd.com" && x.Password == "welcome"))).Returns(true);
+            mockLoginervice.Setup ( details => details.CheckIfUserExists(It.Is<UserDTO>(x=> x.Email == "john89@cesltd.com" && x.Password == "welcome"))).Returns(true);
             var userlogindetails = new LoginController(mockLoginervice.Object);
             var response = userlogindetails.GetUserdetails(new UserDTO(){
                 Email = "john89@cesltd.com",
@@ -26,7 +26,7 @@ namespace Logintest
         public void GetUserDetails_IfPasswordIsInvalid_ReturnsFalse(string email, string password)
         {
             var mockLoginervice = new Mock<ILoginService>();
-            mockLoginervice.Setup(details => details.Userdetails(It.Is<UserDTO>(x => x.Email == email && x.Password == password))).Returns(false);
+            mockLoginervice.Setup(details => details.CheckIfUserExists(It.Is<UserDTO>(x => x.Email == email && x.Password == password))).Returns(false);
             var userlogindetails = new LoginController(mockLoginervice.Object);
             var response = userlogindetails.GetUserdetails(new UserDTO()
             {
@@ -41,7 +41,7 @@ namespace Logintest
         public void GetUserDetails_IfEmailIsInvalid_ReturnsFalse(string email, string password)
         {
             var mockLoginervice = new Mock<ILoginService>();
-            mockLoginervice.Setup(details => details.Userdetails(It.Is<UserDTO>(x => x.Email == email && x.Password == password))).Returns(false);
+            mockLoginervice.Setup(details => details.CheckIfUserExists(It.Is<UserDTO>(x => x.Email == email && x.Password == password))).Returns(false);
             var userlogindetails = new LoginController(mockLoginervice.Object);
             var response = userlogindetails.GetUserdetails(new UserDTO()
             {
@@ -54,7 +54,7 @@ namespace Logintest
         public void ShouldValidateOnEmpty()
         {
             var mockLoginervice = new Mock<ILoginService>();
-            mockLoginervice.Setup(details => details.Userdetails(It.Is<UserDTO>(x => x.Email == string.Empty && x.Password == string.Empty))).Returns(false);
+            mockLoginervice.Setup(details => details.CheckIfUserExists(It.Is<UserDTO>(x => x.Email == string.Empty && x.Password == string.Empty))).Returns(false);
             var userlogindetails = new LoginController(mockLoginervice.Object);
             var response = userlogindetails.GetUserdetails(new UserDTO()
             {
