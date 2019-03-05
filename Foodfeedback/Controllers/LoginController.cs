@@ -1,11 +1,15 @@
 ﻿using Foodfeedback.DTO;
 using Foodfeedback.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace Foodfeedback.Controllers
 {
     [Route("api/login")]
-    public class LoginController
+    /// <summary>
+    /// provides login information
+    /// </summary>
+    public class LoginController:Controller
     {
         private readonly ILoginService _loginService;
         public LoginController(ILoginService loginService)
@@ -16,10 +20,28 @@ namespace Foodfeedback.Controllers
         /// <summary>
         /// call the service and check if the user exists
         /// </summary>
-        public bool GetUserdetails([FromBody]UserDTO userDTO)
+        public IActionResult GetUserdetails([FromBody]UserDTO userDTO)
         {
-           var result = _loginService.CheckIfUserExists(userDTO);
-           return result;
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var result = _loginService.CheckIfUserExists(userDTO);
+                    if (result == true)
+                    {
+                        return Ok(result);
+                    }
+                    else
+                    {
+                        return Ok(result);
+                    }
+                }
+                catch(Exception)
+                {
+                   return StatusCode(500);
+                }
+            }
+            return BadRequest();
         }
     }
 }
