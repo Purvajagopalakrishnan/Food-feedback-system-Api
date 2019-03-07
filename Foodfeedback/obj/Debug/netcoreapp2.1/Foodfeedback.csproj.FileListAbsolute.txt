@@ -1,0 +1,14 @@
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\bin\Debug\netcoreapp2.1\Foodfeedback.deps.json
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\bin\Debug\netcoreapp2.1\Foodfeedback.runtimeconfig.json
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\bin\Debug\netcoreapp2.1\Foodfeedback.runtimeconfig.dev.json
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\bin\Debug\netcoreapp2.1\Foodfeedback.dll
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\obj\Debug\netcoreapp2.1\Foodfeedback.csprojAssemblyReference.cache
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\obj\Debug\netcoreapp2.1\Foodfeedback.csproj.CoreCompileInputs.cache
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\obj\Debug\netcoreapp2.1\Foodfeedback.RazorAssemblyInfo.cache
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\obj\Debug\netcoreapp2.1\Foodfeedback.RazorAssemblyInfo.cs
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\obj\Debug\netcoreapp2.1\Foodfeedback.AssemblyInfoInputs.cache
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\obj\Debug\netcoreapp2.1\Foodfeedback.AssemblyInfo.cs
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\obj\Debug\netcoreapp2.1\Foodfeedback.RazorTargetAssemblyInfo.cache
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\bin\Debug\netcoreapp2.1\Foodfeedback.pdb
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\obj\Debug\netcoreapp2.1\Foodfeedback.dll
+C:\Users\purvajag\source\repos\Foodfeedback\Foodfeedback\obj\Debug\netcoreapp2.1\Foodfeedback.pdb
